@@ -38,3 +38,15 @@ bubbleSort(A, N) // N 個の要素を含む 0-オリジンの配列 A
         A[j] と A[j-1] を交換
         flag = 1
 ```
+
+## 選択ソート
+各計算ステップで１つの最小値を「選択」していく、直観的なアルゴリズム。
+```C
+selectionSort(A, N) // N個の要素を含む0-オリジンの配列A
+  for i が 0 から N-1 まで
+    minj = i
+    for j が i から N-1 まで
+      if A[j] < A[minj]
+        minj = j
+    A[i] と A[minj] を交換
+```
