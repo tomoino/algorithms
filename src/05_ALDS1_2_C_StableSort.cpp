@@ -3,7 +3,8 @@ using namespace std;
 
 static const int N_MAX = 36;
 typedef struct {
-    char suit, value;
+    // char suit, value;
+    int suit, value;
 } Card;
 
 void bubbleSort(Card a[], int n)
@@ -15,7 +16,10 @@ void bubbleSort(Card a[], int n)
         for (int i = n - 1; i > 0; i--)
         {
             if (a[i].value < a[i-1].value) {
-                swap(a[i], a[i - 1]);
+                // swap(a[i], a[i - 1]);
+                Card t = a[i];
+                a[i] = a[i - 1];
+                a[i - 1] = t;
                 flag = 1;
             }
         }
