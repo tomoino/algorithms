@@ -50,3 +50,6 @@ selectionSort(A, N) // N個の要素を含む0-オリジンの配列A
         minj = j
     A[i] と A[minj] を交換
 ```
+
+# 保留中の問題
+* 05_ALDS1_2_C_StableSort
